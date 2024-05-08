@@ -2,6 +2,7 @@ import React from "react";
 import buy from "../assets/home-page/sales/Buy.jpeg";
 import upcomingSeason from "../assets/home-page/sales/upcomingSeason.jpeg";
 import SetBg from "./SetBg";
+import { NavLink } from "react-router-dom";
 
 const SalesCard = () => {
   const data = [
@@ -38,7 +39,7 @@ const SalesCard = () => {
                   {info.desc}
                 </p>
                 <button className="border px-[18px] py-[11px] font-extrabold group-hover:bg-[#088178] group-hover:border-[#088178]">
-                  {info.btn}
+                  <NavLink to="/Shop">{info.btn}</NavLink>
                 </button>
               </div>
               <SetBg bg={info.img} />

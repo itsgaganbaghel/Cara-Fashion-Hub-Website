@@ -16,7 +16,7 @@ const NewArrivalsContext = (props) => {
   const [Arrivals, setArrivals] = useState([
     {
       img: na1 , 
-      name: "nam44e",
+      name: "Plain Shirt",
       brandName: "Adidas",
       price: "$78",
       rating: 4,
@@ -24,55 +24,55 @@ const NewArrivalsContext = (props) => {
     
     {
       img: na2,
-      name: "name",
+      name: "Plain Texture Shirt",
       brandName: "Adidas",
-      price: "$8",
+      price: "$60",
       rating: 4,
     },
 
     {
       img: na3,
-      name: "nam44e",
+      name: "White Cotton Shirt",
       brandName: "Adidas",
-      price: "$78",
+      price: "$60",
       rating: 4,
     },
 
     {
       img: na4,
-      name: "nam44e",
+      name: " Half sleeves Printed Shirt",
       brandName: "Adidas",
-      price: "$78",
+      price: "$70",
       rating: 4,
     },
 
     {
       img:na5,
-      name: "name",
+      name: "Simple Denim Shirt",
       brandName: "Adidas",
-      price: "$8",
+      price: "$68",
       rating: 4,
     },
 
     {
       img: na6,
-      name: "nam44e",
+      name: "Classic Short",
       brandName: "Adidas",
-      price: "$78",
+      price: "$45",
       rating: 4,
     },
 
     {
       img: na7,
-      name: "name",
+      name: "Modern Double Pocket Shirt ",
       brandName: "Adidas",
-      price: "$8",
+      price: "$80",
       rating: 4,
     },
 
     {
       img: na8,
-      name: "nam44e",
+      name: "Half Sleeves Shirt",
       brandName: "Adidas",
       price: "$78",
       rating: 4,

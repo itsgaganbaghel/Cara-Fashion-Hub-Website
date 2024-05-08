@@ -1,6 +1,7 @@
 import React from "react";
 import SetBg from "./SetBg";
 import banner from "../assets/home-page/super-sale.jpeg";
+import { NavLink } from "react-router-dom";
 
 const ExploreMore = () => {
   return (
@@ -11,7 +12,8 @@ const ExploreMore = () => {
           Accessories
         </h1>
         <button className="px-4 py-2 bg-white text-black font-bold text-[2vmax] rounded-md loading">
-          Explore More
+          
+          <NavLink to="/Shop">Explore More</NavLink>
         </button>
       {/* <SetBg bg={banner} /> */}
       <img src={banner} 

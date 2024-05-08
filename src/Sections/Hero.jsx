@@ -3,16 +3,16 @@ import textBg from "../assets/home-page/Hero/hero-bg-print.png";
 import blob from "../assets/home-page/Hero/blob vector.png";
 import HeroBg from "../assets/home-page/Hero/hero-img.png";
 import { BackgroundContext } from "../Context/SetBackgroundContext";
-// import css from "../Components/Main.css";
-import SetBg from "./SetBg"
+import SetBg from "./SetBg";
+
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
-  // const {Bg } = useContext(BackgroundContext)
   return (
     <section
       className={`  overflow-hidden items-start h-[100vh] w-mx-auto  px-[110px] pt-[75px]`}
     >
-    <SetBg bg={HeroBg}/>
+      <SetBg bg={HeroBg} />
       <img
         src={blob}
         width="35%"
@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="hero-button relative hover:scale-110 hover:text-[18px]">
             <img src={textBg} alt="" className="ml-[10%]" />
             <p className="absolute top-[25%] left-[40%] font-extrabold text-[#088178]">
-              Shop Now
+            <NavLink to="/Shop">Shop Now</NavLink>
             </p>
           </div>
         </a>

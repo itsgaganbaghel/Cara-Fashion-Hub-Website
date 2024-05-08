@@ -3,15 +3,14 @@ import Header from "./Header";
 import BlogCard from "./BlogCard";
 import Newsletter from "../Sections/Newsletter";
 import Footer from "./Footer";
-import "./Main.css"
-import bg from "../assets/Blog-Page/Bbg.jpeg";
-import a1 from "../assets/Blog-Page/asset-1.jpeg"
-import a2 from "../assets/Blog-Page/asset-2.jpeg"
-import a3 from "../assets/Blog-Page/asset-3.jpeg"
-import a4 from "../assets/Blog-Page/asset-4.jpeg"
-import a5 from "../assets/Blog-Page/asset-5.jpeg"
+import "./Main.css";
+import a1 from "../assets/Blog-Page/asset-1.jpeg";
+import a2 from "../assets/Blog-Page/asset-2.jpeg";
+import a3 from "../assets/Blog-Page/asset-3.jpeg";
+import a4 from "../assets/Blog-Page/asset-4.jpeg";
+import a5 from "../assets/Blog-Page/asset-5.jpeg";
 
-import blog from "../assets/Blog-Page/Bbg.jpeg"
+import blog from "../assets/Blog-Page/Bbg.jpeg";
 
 const Blog = () => {
   const data = [
