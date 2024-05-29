@@ -1,5 +1,4 @@
 import React from "react";
-import SetBg from "./SetBg";
 import banner from "../assets/home-page/super-sale.jpeg";
 import { NavLink } from "react-router-dom";
 

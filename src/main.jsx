@@ -8,7 +8,6 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Layout from "./Layout.jsx";
 import Home from "./Components/Home.jsx";
 import Shop from "./Components/Shop.jsx";
 import Blog from "./Components/Blog.jsx";
@@ -18,10 +17,11 @@ import Card from "./Components/Card.jsx";
 import FProductDetails from "./Sections/FProductDetails.jsx";
 import MainContext from "./Context/MainContext.jsx";
 import { CartProvider } from "./Context/CartContext.jsx";
+import App from "./App.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/" element={<App />}>
       <Route path="/" element={<Home />} />
       <Route path="/:id" element={<FProductDetails />} />
       <Route path="/Shop" element={<Shop />} />

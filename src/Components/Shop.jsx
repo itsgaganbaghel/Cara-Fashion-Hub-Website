@@ -2,8 +2,6 @@ import React from "react";
 import Header from "./Header";
 import Newsletter from "../Sections/Newsletter";
 import Footer from "./Footer";
-import NewArrivalsData from "../Sections/NewArrivalsData";
-import FProductData from "../Sections/FProductData";
 
 import ShopBg from "../assets/home-page/shop-intro-bg.jpg";
 import ShopCards from "../Sections/ShopCards";

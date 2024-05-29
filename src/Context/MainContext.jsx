@@ -16,7 +16,7 @@ import na5 from "../assets/home-page/New_Arrivals/na-5.jpeg";
 import na6 from "../assets/home-page/New_Arrivals/na-6.jpeg";
 import na7 from "../assets/home-page/New_Arrivals/na-7.jpeg";
 import na8 from "../assets/home-page/New_Arrivals/na-8.jpeg";
-import axios from "axios";
+// import axios from "axios";
 export const main = createContext();
 const MainContext = (props) => {
   const [Products, setProducts] = useState([
