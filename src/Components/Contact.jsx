@@ -1,6 +1,5 @@
 import React from "react";
 import Newsletter from "../Sections/Newsletter";
-import Header from "./Header";
 import Footer from "./Footer";
 import contact from "../assets/About/about-banner.png";
 
@@ -12,11 +11,15 @@ const Contact = () => {
       img: contact,
     },
   ];
+  const formHandler = (e)=>{
+    e.preventDefault();
+    alert("Your Query has been submitted successfully")
+  }
+  
   return (
     <>
-      {/* <Header HData={headerData} /> */}
       <div className="w-full h-[100vh] bg-[#1C1C1C] text-white ">
-        <div className="w-[50%] mx-auto pt-32">
+        <div className="w-[50%] mx-auto pt-10">
           <h1 className="text-[3rem] font-bold font-serif ">Contact Me</h1>
           <h2 className="text-[2rem] font-semibold">
             Suggestion, Thoughts or Any Questions{" "}
@@ -43,6 +46,7 @@ const Contact = () => {
             />
             <button
               type="submit"
+              onClick={formHandler}
               className="bg-red-500 text-white font-bold outline-none text-[1.2rem] rounded-lg py-1 hover:scale-75"
             >
               Send Message

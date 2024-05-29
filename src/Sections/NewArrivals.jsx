@@ -8,7 +8,7 @@ const NewArrivals = () => {
       <p className="mt-[15px] mb-[20px] text-[16px] opacity-75 font-semibold text-center">
         Summer Collection New Modern Design
       </p>
-      <div className="flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-center md:justify-between">
         <NewArrivalsData />
       </div>
     </section>

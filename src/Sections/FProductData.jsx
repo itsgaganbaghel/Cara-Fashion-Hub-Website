@@ -1,13 +1,18 @@
 import React, { useContext } from "react";
-import { FProductContext } from "../Context/FeaturedProductContext";
+import { NavLink } from "react-router-dom";
+import { main } from "../Context/MainContext";
+import { CartContext } from "../Context/CartContext";
 
 const FProductData = () => {
-  const { FProducts } = useContext(FProductContext);
+  const { Products } = useContext(main);
+  const { addToCart } = useContext(CartContext);
+  
+
   return (
     <>
-      {FProducts.map((info, i) => {
+      {Products.filter((v, i) => v.id < 5).map((info, i) => {
         return (
-          <a key={i} href="02-2-shop-product.html">
+          <NavLink key={i} to={`/${info.id}`}>
             <div className="rounded-2xl border border-[#CCE7D0] my-[15px] py-[10px] px-[12px] fp">
               <img
                 src={info.img}
@@ -22,12 +27,15 @@ const FProductData = () => {
                 <p className="pt-[7px] text-[#088178] font-bold">
                   {info.price}
                 </p>
-                <div className="bg-[#e3e6f3] rounded-full absolute p-2 right-0 bottom-0 flex items-center">
-                  gag
-                </div>
+                <button
+                onClick={() => addToCart(info)}
+                className="bg-[#e3e6f3] rounded-full absolute px-4 py-2 right-0 bottom-0 flex items-center"
+              >
+                Add to cart
+              </button>
               </div>
             </div>
-          </a>
+          </NavLink>
         );
       })}
     </>

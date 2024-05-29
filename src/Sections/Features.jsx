@@ -1,9 +1,10 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext } from "react";
 
 const Features = ({Feature}) => {
   return (
     <div className="feature-sec w-full relative bg-white px-[80px] py-[40px]">
-      <div className="feature relative flex-wrap flex justify-between">
+      <div className="feature relative flex-wrap flex justify-center gap-10">
         {Feature.map((f , index) => (
           <div  key={index} className="fea border shadow-2xl shadow-transparent border-[#CCE7D0] rounded-xl my-[15px] py-[25px] px-[15PX] flex flex-col items-center hover:shadow-[#e3e6f3]">
             <img
@@ -15,7 +16,9 @@ const Features = ({Feature}) => {
               {f.title}
             </h5>
           </div>
+          
         ))}
+        
       </div>
     </div>
   );

@@ -48,8 +48,8 @@ const Blog = () => {
 
   const headerData = [
     {
-      heading: "#StayCool",
-      desc: "Save more with coupons & up to 70% off!",
+      heading: "#Blogs",
+      desc: "New Blogs, New Stuff & New Collection",
       img: blog,
     },
   ];

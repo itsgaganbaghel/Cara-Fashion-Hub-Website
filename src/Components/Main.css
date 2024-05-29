@@ -12,21 +12,15 @@
 }
 .hero-bg{
     background-image:url( "../assets/home-page/Hero/hero-img.png") ;
-    background-position-y: -25%;
-    background-position-x: 100%;
+    /* background-position-y: -25%; */
+    /* background-position-x: 100%; */
     background-size: cover;
     background-repeat: no-repeat;
 }
 .fp:hover{
     box-shadow: 20px 20px 30px rgb(0,0,0,0.3);
 }
-/* ul:hover li{
-        filter: blur(2px);
-    }
-ul:hover li:hover{
-        filter: blur(0);
-    } */
-    
+
     .slider{
         position: relative;
         width: 100%;
@@ -84,6 +78,28 @@ ul:hover li:hover{
         color: #ed1e79;
         line-height: 2px;
     }
+
+    /* cart  */
+    table{
+        row-gap: 20px;
+        column-gap: 20px;
+        border: 2px solid black;
+    }
+
+     tbody, tr, td {
+        text-align: center;
+        border: 2px solid black;
+        
+    }
+    thead{
+    border-left: transparent;
+    border-right: transparent;
+    }
+    td{
+        padding-top: 20px;
+        /* width: 150px; */
+    }
+
     /* for mobile  */
     
     @media screen and (max-width:805px){
@@ -97,19 +113,22 @@ ul:hover li:hover{
             flex-direction: column;
             align-items: center;
             position: fixed;
-            top: 4rem;
+            top: 8rem;
             left: 100%;
             transition: all 1s;
+            z-index: 20;
+            padding-top: 30px;
+            gap: 30px;
         }
        
         .checkbtn {
             display: block;
-            color: black;
         }
        
     
         #check:checked~.list{
             left: 0%;
+            
         }
     }
 
@@ -118,26 +137,17 @@ ul:hover li:hover{
         overflow-x: hidden;
         -webkit-animation: sl-txt 3s linear infinite;
 }
-    /* @keyframes sl-txt {
-        0% {
-            transform: translateX(-10%);
-            -webkit-transform: translateX(-10%);
-            -moz-transform: translateX(-10%);
-            -ms-transform: translateX(-10%);
-            -o-transform: translateX(-10%);
-}
-        100%{
-            transform: translateX(50%);
-            -webkit-transform: translateX(50%);
-            -moz-transform: translateX(50%);
-            -ms-transform: translateX(50%);
-            -o-transform: translateX(50%);
-}
-    } */
+
 
     /* home navigation styling for phone  */
 
-    @media screen and (max-width:500px) {
+  
+    .FPdiv{
+        padding-left: 0 ;
+        padding-right: 0;
+    }
+
+    @media screen and (max-width:700px) {
       
         .nav-div{
             padding: 2vh 2vw;
@@ -178,7 +188,6 @@ ul:hover li:hover{
         }
         .crazy-div{
             gap: 3vh;
-            padding: 0%;
         }
     .crazy{
         width: auto;
@@ -228,7 +237,7 @@ ul:hover li:hover{
     /* shop-items section  */
     .shop-card{
         /* border: 2px solid red; */
-        padding: 100px 0 20px 0;
+        padding: 10px 0 20px 0;
     }
     .shop-item{
         /* border: 2px solid red; */
@@ -239,18 +248,19 @@ ul:hover li:hover{
         width: 100%;
         /* border: 2px solid red; */
         margin: 1vmax;
+        padding-top: 1px;
 
     }
     .item-name{
-        padding: 4px 0 2px 0 ;
-        font-size: 25px;
+        padding: 1px 0 1px 0 ;
+        font-size: 20px;
     }
     .item-quantity{
         width: 8vmax;
         height: 6vmax;
     }
     .item-product{
-        padding: 10px 0 0 0;
+        padding: 15px 0 0 0;
     }
     .item-detail{
         font-size: 2vmax;

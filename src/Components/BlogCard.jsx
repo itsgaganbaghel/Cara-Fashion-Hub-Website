@@ -4,14 +4,14 @@ import SetBg from "../Sections/SetBg";
 const BlogCard = ({ data }) => {
   return (
     <section className="blog-content relative pt-[150px] px-[150px]">
-      <div className=" flex flex-wrap h-auto gap-6 max-w-[100%] justify-between">
+      <div className=" flex flex-wrap h-auto gap-6 max-w-[100%] justify-between ">
         {data.map((info, i) => {
           return (
             <>
-              <div key={i} className={"relative bg-red-300 h-[300px] w-[50%] "}>
+              <div  className={"relative bg-red-300 lg:h-[300px] lg:w-[50%] h-[200px] w-full"}>
                 <SetBg bg={info.img}/>
               </div>
-              <div className=" w-[47%] flex  flex-col justify-center">
+              <div className="w-full  lg:w-[47%] flex  flex-col justify-center">
                 <h3>
                   <q className="blog-content-h3 font-bold text-[20px]">
                     {info.heading}

@@ -24,7 +24,6 @@ const About = () => {
       <section className="about-content px-[80px] py-[40px] relative">
         <div className="flex flex-wrap justify-between">
           <div className="relative about-content-01 w-[40%] h-auto">
-            {/* <img src="./images/About/a1.jpg" alt="" className="h-[100]" /> */}
             <SetBg  bg={aboutCard}/>
 
           </div>
@@ -65,7 +64,7 @@ const About = () => {
 
       {/*  VIDEO SECTION START */}
       <section className="relative w-[100%] flex flex-col items-center h-auto">
-        <h2 class="about-video-h2 font-bold text-[3rem] pb-[20px]">
+        <h2 className="about-video-h2 font-bold text-[3rem] pb-[20px]">
           Download Our{" "}
           <a href="#" className="text-blue-700 underline">
             App

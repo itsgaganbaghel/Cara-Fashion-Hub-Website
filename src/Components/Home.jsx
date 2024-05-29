@@ -20,7 +20,7 @@ const Home = () => {
       <SalesCard />
       <NewCollection />
       <Newsletter />
-      <Footer /> 
+      <Footer />
     </>
   );
 };

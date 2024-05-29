@@ -4,12 +4,12 @@ import SetHeaderBg from "./SetHeaderBg";
 const Header = ({ HData }) => {
   // console.log(headerData);
   return (
-    <section className=" relative w-[100%] h-auto pt-[80px] ">
+    <section className=" relative w-[100%] h-auto ">
       {HData.map((data, i) => {
         return (
           <div
             key={i}
-            className="text-white w-[100%] h-[40vh] text-black bg-cover flex flex-col justify-center items-center"
+            className="text-white w-[100%] h-[40vh] bg-cover flex flex-col justify-center items-center"
             // style={{ backgroundImage: "url('../assets/Blog-Page/Bbg.jpeg')" }}
           >
             <h3 className="text-[44px] font-bold leading-[2.5rem]">

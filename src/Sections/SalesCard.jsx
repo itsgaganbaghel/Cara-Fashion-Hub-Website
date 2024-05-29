@@ -11,7 +11,7 @@ const SalesCard = () => {
       heading: "Crazy Deals",
       information: "But 1 Get 1 Free",
       desc: " The Best Classic Dress in on Sale at Cara",
-      btn: "Learn More",
+      btn: "Get Now",
     },
     {
       img: upcomingSeason,
@@ -22,15 +22,15 @@ const SalesCard = () => {
     },
   ];
   return (
-    <section className="w-[100%] h-auto relative bg-white sm:px-[80px] py-[40px]  pl-[15px]">
-      <div className="crazy-div p-[30px] text-white flex flex-wrap justify-evenly px-[10px]">
+    <section className="w-[100%] h-auto relative bg-white sm:px-[80px] lg:py-[40px]  lg:pl-[15px] ">
+      <div className="crazy-div p-[30px] text-white  lg:flex lg:flex-wrap gap-10 lg:justify-evenly px-[10px] ">
         {data.map((info, i) => {
           return (
             <div
               key={i}
-              className="relative crazy p-[30px] w-[580px] h-[50vh] flex flex-col justify-center items-start group cursor-pointer"
+              className="relative crazy p-[30px] w-[580px] h-[50vh]  flex-col justify-center items-start group cursor-pointer  mb-10"
             >
-              <div className="z-20">
+              <div className="z-20 relative gap">
                 <p className="font-semibold text-[25px]">{info.heading}</p>
                 <h3 className="text-[29px] font-extrabold">
                   {info.information}

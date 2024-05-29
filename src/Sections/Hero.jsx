@@ -1,22 +1,18 @@
 import React, { useContext } from "react";
 import textBg from "../assets/home-page/Hero/hero-bg-print.png";
-import blob from "../assets/home-page/Hero/blob vector.png";
-import HeroBg from "../assets/home-page/Hero/hero-img.png";
-import { BackgroundContext } from "../Context/SetBackgroundContext";
-import SetBg from "./SetBg";
 
 import { NavLink } from "react-router-dom";
+import blob from "../assets/home-page/Hero/blob.png";
 
 const Hero = () => {
   return (
     <section
-      className={`  overflow-hidden items-start h-[100vh] w-mx-auto  px-[110px] pt-[75px]`}
+      className=" bg-red-400 hero hero-bg overflow-hidden items-start  w-mx-auto relative px-[110px]"
     >
-      <SetBg bg={HeroBg} />
       <img
         src={blob}
         width="35%"
-        className=" absolute top-[20%] left-[4%] animate-[pulse_1s_ease-in-out_infinite]"
+        className="blob absolute z-10 top-[18%] left-[2%] animate-[pulse_1s_ease-in-out_infinite]"
       />
 
       <div className="hero-text relative h-[90vh] flex flex-col justify-center z-10">
@@ -30,14 +26,14 @@ const Hero = () => {
         <p className="hero-p font-serif mt-[15px] font-bold opacity-70 mb-[20px] tracking-[2px]">
           Save more with coupons & up to 70% off!
         </p>
-        <a href="02-1-shop.html" className="hero-link w-[17vw]">
+        <NavLink to="/Shop" className="hero-link w-[17vw]">
           <div className="hero-button relative hover:scale-110 hover:text-[18px]">
             <img src={textBg} alt="" className="ml-[10%]" />
             <p className="absolute top-[25%] left-[40%] font-extrabold text-[#088178]">
-            <NavLink to="/Shop">Shop Now</NavLink>
+              Shop Now
             </p>
           </div>
-        </a>
+        </NavLink>
       </div>
     </section>
   );
