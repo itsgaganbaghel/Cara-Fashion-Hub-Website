@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import React, { useContext } from "react";
 
 const Features = ({Feature}) => {
