@@ -17,9 +17,7 @@ const Shop = () => {
   return (
     <>
       <Header HData={headerData} />
-      <div className="flex flex-wrap justify-between px-20 py-20 gap-10">
-        {/* <NewArrivalsData /> */}
-        {/* <FProductData /> */}
+      <div className="flex flex-wrap justify-center xl:justify-between px-20 py-20 gap-10">
         <ShopCards />
       </div>
       <Newsletter />
